@@ -5,7 +5,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=s, initial-scale=1.0">
 	<title>Bitiruvchi-Lenta-Premium</title>
-	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css
+	">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js
+	">
+	<link rel=" stylesheet" href="main.css">
 </head>
 
 <body>
@@ -15,27 +19,38 @@
 	</div>
 
 	<header>
-		<div class="container">
-			<div class="header-inner">
-				<div class="header-logo">
-					<img src="img/logo.png" alt="logo" width="50px">
-					<span class="header-logo-text">Premium Lenta</span>
+		<nav class="navbar navbar-expand-lg bg-body-tertiary">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">Premium Lenta</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Uy</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Ranglar</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Mijozlar</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">FAQ</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Bog'lanish</a>
+						</li>
+					</ul>
+				</div>
+				<div class="header-button">
+					<button class="header-button-item">Dizaynlar</button>
+					<button class="header-button-item">Buyurtma berish</button>
 				</div>
 			</div>
-			<div class="header-menu">
-				<ul class="header-menu-list">
-					<li><a class="header-menu-item" href="#">Uy</a></li>
-					<li><a class="header-menu-item" href="#">Ranglar</a></li>
-					<li><a class="header-menu-item" href="#">Mijozlar</a></li>
-					<li><a class="header-menu-item" href="#">FAQ</a></li>
-					<li><a class="header-menu-item" href="#">Bog'lanish</a></li>
-				</ul>
-			</div>
-			<div class="header-button">
-				<button class="header-button-item">Dizaynlar</button>
-				<button class="header-button-item">Buyurtma berish</button>
-			</div>
-		</div>
+		</nav>
 	</header>
 
 	<script src="script.js"></script>
