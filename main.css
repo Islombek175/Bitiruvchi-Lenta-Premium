@@ -20,6 +20,10 @@
 	);
 }
 
+.header-logo {
+	padding-left: 10px;
+}
+
 header .navbar {
 	background: linear-gradient(
 		180deg,
@@ -42,13 +46,19 @@ header .navbar {
 	gap: 20px;
 }
 
+@media (max-width: 576px) {
+	.navbar-collapse {
+		justify-content: end;
+	}
+}
+
 .navbar-nav {
 	display: flex;
 	gap: 20px;
 }
 
 .nav-link {
-	padding: 10px 20px;
+	padding: 10px 20px !important;
 	border-radius: 10px;
 	transition: all 0.3s ease;
 	background: var(--royal-gradient);
@@ -59,6 +69,12 @@ header .navbar {
 .nav-link:hover {
 	color: #fff;
 	scale: 1.05;
+}
+
+.header-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .header-button-item {
