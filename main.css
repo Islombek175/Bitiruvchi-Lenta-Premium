@@ -21,7 +21,7 @@
 }
 
 .header-logo {
-	padding-left: 10px;
+	padding-left: 20px;
 }
 
 header .navbar {
@@ -37,6 +37,11 @@ header .navbar {
 	font-size: 20px;
 	font-weight: 600;
 	color: var(--gold-color);
+	padding-left: 10px;
+}
+
+.navbar-toggler {
+	border: 2px solid black;
 }
 
 .navbar-collapse {
@@ -50,6 +55,11 @@ header .navbar {
 	.navbar-collapse {
 		justify-content: end;
 	}
+	
+	.navbar-nav {
+		margin: 10px 0;
+	}
+
 }
 
 .navbar-nav {
