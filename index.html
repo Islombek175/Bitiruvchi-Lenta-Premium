@@ -3,12 +3,14 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=s, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Bitiruvchi-Lenta-Premium</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css
-	">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-	<link rel=" stylesheet" href="main.css">
+	<link rel="stylesheet" href="main.css">
 </head>
 
 <body>
@@ -17,46 +19,62 @@
 		<span class="loader"></span>
 	</div>
 
-	<header>
-		<nav class="navbar navbar-expand-lg bg-body-tertiary">
-			<div class="header-logo">
-				<img src="img/logo.png" alt="logo" width="50px">
-			</div>
-			<div class="container-fluid">
-				<a class="navbar-brand" href="#">Premium Lenta</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav">
-						<li class="nav-item">
-							<a class="nav-link" href="#hero">Uy</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Ranglar</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Mijozlar</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">FAQ</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Bog'lanish</a>
-						</li>
-					</ul>
+	<header class="site-header">
+		<div class="container nav-container">
+			<a class="brand" href="#">
+				<img src="img/logo.png" alt="Bitiruvchi Lenta Premium logotipi">
+				<div>
+					<span>Bitiruvchi</span>
+					<strong>Lenta Premium</strong>
 				</div>
-				<div class="header-button">
-					<button class="header-button-item">Dizaynlar</button>
-					<button class="header-button-item">Buyurtma berish</button>
-				</div>
-			</div>
-		</nav>
+			</a>
+			<button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+			<nav class="site-nav" id="site-nav">
+				<ul>
+					<li><a href="#collections">To‘plamlar</a></li>
+					<li><a href="#graduates">Bitiruvchilarga</a></li>
+					<li><a href="#materials">Materiallar</a></li>
+					<li><a href="#reviews">Fikrlar</a></li>
+					<li><a href="#contacts">Aloqa</a></li>
+				</ul>
+				<a class="cta" href="#contact-form">Lenta buyurtma qilish</a>
+			</nav>
+		</div>
 	</header>
 
-	<section class="hero" id="hero">
-		
+	<section class="hero" id="collections">
+		<div class="container hero-content">
+			<div class="hero-grid">
+				<div class="hero-copy">
+					<p class="eyebrow">Bitiruvchilar uchun premium lentalar</p>
+					<h1>Maktabdagi eng yorqin kunni eslatuvchi lenta</h1>
+					<p class="lead">
+						Biz shaxsiy dizayn, kashtali yozuv va brend ranglaridagi bitiruv lentalarini
+						butun O‘zbekiston bo‘ylab yetkazib beramiz.
+					</p>
+					<div class="hero-actions">
+						<a class="btn primary" href="#contact-form">Katalogni olish</a>
+						<a class="btn ghost" href="#materials">Materiallarni ko‘rish</a>
+					</div>
+				</div>
+				<div class="hero-slider" aria-live="polite">
+					<button class="slider-btn prev" aria-label="Oldingi lenta">
+						<span>&larr;</span>
+					</button>
+					<div class="slider-window">
+						<div class="slider-track"></div>
+					</div>
+					<button class="slider-btn next" aria-label="Keyingi lenta">
+						<span>&rarr;</span>
+					</button>
+					<div class="slider-dots" aria-label="Slaydlar ko‘rsatkichlari"></div>
+				</div>
+			</div>
+		</div>
 	</section>
 
 	<script src="script.js"></script>
