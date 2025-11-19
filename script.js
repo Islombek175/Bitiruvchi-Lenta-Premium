@@ -44,12 +44,44 @@ function initHeroSlider() {
 
 	const galleryImages = [
 		{
-			src: 'img/all-colors.jpg',
-			caption: 'Gradient palitradagi premium lenta namunasi',
+			src: 'img/represent1.JPG',
+			caprion: 'Presentatsiya 1',
 		},
 		{
-			src: 'img/logo.png',
-			caption: 'Individual logotip',
+			src: 'img/represent2.JPG',
+			caprion: 'Presentatsiya 2',
+		},
+		{
+			src: 'img/represent3.JPG',
+			caprion: 'Presentatsiya 3',
+		},
+		{
+			src: 'img/represent4.JPG',
+			caprion: 'Presentatsiya 4',
+		},
+		{
+			src: 'img/represent5.JPG',
+			caprion: 'Presentatsiya 5',
+		},
+		{
+			src: 'img/represent6.JPG',
+			caprion: 'Presentatsiya 6',
+		},
+		{
+			src: 'img/represent7.JPG',
+			caprion: 'Presentatsiya 7',
+		},
+		{
+			src: 'img/represent8.JPG',
+			caprion: 'Presentatsiya 8',
+		},
+		{
+			src: 'img/represent9.JPG',
+			caprion: 'Presentatsiya 9',
+		},
+		{
+			src: 'img/represent10.JPG',
+			caprion: 'Presentatsiya 10',
 		},
 	]
 
@@ -126,5 +158,4 @@ function initHeroSlider() {
 	sliderWindow.addEventListener('touchend', onTouchEnd)
 
 	goToSlide(0)
-
 }
