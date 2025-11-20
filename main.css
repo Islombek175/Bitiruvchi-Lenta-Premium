@@ -474,27 +474,33 @@ h1 {
 	.hero-slider {
 		flex-direction: column;
 		padding: 24px;
+		position: relative;
+	}
+
+	.slider-window {
+		position: relative;
+		width: 100%;
 	}
 
 	.slider-btn {
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
+		z-index: 10;
+		width: 40px;
+		height: 40px;
 	}
 
 	.slider-btn.prev {
-		left: 18px;
+		left: 8px;
 	}
 
 	.slider-btn.next {
-		right: 18px;
-	}
-
-	.hero-slider {
-		padding-top: 48px;
+		right: 8px;
 	}
 
 	.slider-dots {
 		bottom: 12px;
+		z-index: 10;
 	}
 }
