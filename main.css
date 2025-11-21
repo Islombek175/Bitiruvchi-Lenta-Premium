@@ -274,9 +274,9 @@ section::before {
 
 .hero-grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-	gap: 48px;
+	grid-template-columns: 1fr 1fr;
 	align-items: center;
+	gap: 20px;
 }
 
 .hero-copy {
@@ -312,94 +312,66 @@ h1 {
 }
 
 .hero-slider {
-	position: relative;
+	background: #fff;
+	border-radius: 20px;
+	padding: 20px;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	gap: 20px;
-	padding: 32px 24px;
-	border-radius: 32px;
-	background: rgba(255, 255, 255, 0.75);
-	box-shadow: 0 30px 60px rgba(85, 60, 154, 0.15);
+	width: min(380px, 100%);
+	margin-left: auto;
 }
 
 .slider-heading {
 	text-align: center;
 }
 
-.slider-heading p {
-	font-size: 12px;
-	text-transform: uppercase;
-	letter-spacing: 5px;
+.slider-heading .eyebrow {
 	color: #ff7b54;
+	font-size: 12px;
+	letter-spacing: 4px;
 	margin-bottom: 6px;
-	font-weight: 600;
 }
 
 .slider-heading h3 {
 	font-size: 22px;
-	color: #2d1f54;
-	margin: 0;
 	font-weight: 600;
+	margin-bottom: 15px;
+	color: #2d1f54;
 }
 
 .slider-frame {
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 12px;
 	position: relative;
+	width: 100%;
+	overflow: hidden;
 }
 
 .slider-window {
-	width: min(420px, 80vw);
-	aspect-ratio: 4 / 3;
-	border-radius: 24px;
+	width: 100%;
+	aspect-ratio: 3 / 4;
 	overflow: hidden;
-	position: relative;
-	background: linear-gradient(
-		135deg,
-		rgba(255, 255, 255, 0.95),
-		rgba(246, 240, 255, 0.95)
-	);
-	box-shadow: 0 20px 60px rgba(85, 60, 154, 0.2);
-	padding: 12px;
+	border-radius: 24px;
+	box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
 
 .slider-track {
 	display: flex;
-	width: 100%;
-	height: 100%;
 	transition: transform 0.5s ease;
 }
 
 .slider-item {
 	min-width: 100%;
 	height: 100%;
-	position: relative;
-	flex-shrink: 0;
-	padding: 8px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	border-radius: 15px;
+	overflow: hidden;
 }
 
 .slider-item img {
 	width: 100%;
 	height: 100%;
-	object-fit: contain;
+	object-fit: cover;
 	display: block;
-	border-radius: 16px;
-	box-shadow: 0 8px 32px rgba(85, 60, 154, 0.2),
-		0 4px 16px rgba(255, 106, 136, 0.15);
-	transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.slider-item:hover img {
-	transform: scale(1.02);
-	box-shadow: 0 12px 48px rgba(85, 60, 154, 0.3),
-		0 6px 24px rgba(255, 106, 136, 0.2);
 }
 
 .palette {
@@ -446,44 +418,51 @@ h1 {
 }
 
 .slider-btn {
-	width: 44px;
-	height: 44px;
-	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: #fff;
 	border: none;
-	background: linear-gradient(120deg, #ffb347, #ff6a88);
-	color: white;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
 	cursor: pointer;
-	box-shadow: 0 14px 30px rgba(255, 106, 136, 0.35);
-	transition: transform 0.2s ease, opacity 0.2s ease;
+	padding: 10px 14px;
+	border-radius: 50%;
+	font-size: 20px;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+	transition: 0.2s ease;
 }
 
 .slider-btn:hover {
-	transform: translateY(-2px);
+	background: #f5f5f5;
+}
+
+.slider-btn.prev {
+	left: -10px;
+}
+
+.slider-btn.next {
+	right: -10px;
 }
 
 .slider-dots {
-	position: absolute;
-	bottom: 18px;
-	left: 50%;
-	transform: translateX(-50%);
 	display: flex;
+	justify-content: center;
 	gap: 8px;
+	margin-top: 15px;
 }
 
 .slider-dots button {
-	width: 8px;
-	height: 8px;
+	width: 10px;
+	height: 10px;
+	background: #d3d3d3;
 	border-radius: 50%;
 	border: none;
-	background: rgba(255, 255, 255, 0.5);
 	cursor: pointer;
+	transition: 0.2s ease;
 }
 
 .slider-dots button.active {
-	background: #ff6a88;
+	background: #111;
+	transform: scale(1.2);
 }
 
 .btn {
@@ -571,38 +550,18 @@ h1 {
 		grid-template-columns: 1fr;
 	}
 
-	.hero-slider {
-		padding: 24px;
+	.slider-btn {
+		top: auto;
+		bottom: -10px;
+		transform: none;
 	}
 
-	.slider-frame {
-		position: relative;
-		width: 100%;
+	.slider-btn.prev {
+		left: 20%;
 	}
 
-	.slider-frame .slider-btn {
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
-		z-index: 10;
-		width: 40px;
-		height: 40px;
-	}
-
-	.slider-frame .slider-btn.prev {
-		left: 8px;
-	}
-
-	.slider-frame .slider-btn.next {
-		right: 8px;
-	}
-
-	.slider-window {
-		width: 100%;
-	}
-
-	.slider-dots {
-		bottom: 12px;
+	.slider-btn.next {
+		right: 20%;
 	}
 
 	.palette {

@@ -1,0 +1,107 @@
+[33mcommit 004ce2133ae7aa39d5d040c2e603a8e2491e8ae1[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Islombek Matkarimov <matkaimovislambek@gmail.com>
+Date:   Fri Nov 21 19:06:32 2025 +0500
+
+    test 3
+
+[33mcommit 814b8545902c59536b7531fef81b9acbda4d31b2[m
+Author: Islombek Matkarimov <matkaimovislambek@gmail.com>
+Date:   Fri Nov 21 18:58:40 2025 +0500
+
+    test 2
+
+[33mcommit 8785eff7375a4e6b7e2d03167533773bce9e9602[m
+Author: Islombek Matkarimov <matkaimovislambek@gmail.com>
+Date:   Fri Nov 21 18:49:05 2025 +0500
+
+     mobile uchun tuzatish test 1
+
+[33mcommit 9f3cf81e2d880e3b2b6214b1ce6172bd08a88d40[m
+Author: Islombek Matkarimov <matkaimovislambek@gmail.com>
+Date:   Fri Nov 21 17:20:36 2025 +0500
+
+    active nav-links, smooth-scrolling
+
+[33mcommit 098d993923e04ad51724b7f1621012dbcc9a1994[m
+Author: Islombek Matkarimov <matkaimovislambek@gmail.com>
+Date:   Fri Nov 21 17:11:44 2025 +0500
+
+    palitra section qo'shildi, box-shadow lar yaxshilandi, qo'shimcha  kichkina style lar
+
+[33mcommit 9319dd168003af13ba0b81e013ca7a757fea37c5[m
+Author: Islombek Matkarimov <matkaimovislambek@gmail.com>
+Date:   Fri Nov 21 16:54:34 2025 +0500
+
+     sayt icon qo'shildi, slayderga tavsir berildi
+
+[33mcommit 8e5aee7e7534fb093ac6896303e7bac8df6e2b81[m
+Author: Islombek Matkarimov <matkaimovislambek@gmail.com>
+Date:   Thu Nov 20 05:25:42 2025 +0500
+
+     slayder mobile uchun bug-fix
+
+[33mcommit e5bccc4bd27e87a72afda7e7a583440f27b575c7[m
+Author: Islombek Matkarimov <matkaimovislambek@gmail.com>
+Date:   Thu Nov 20 05:17:05 2025 +0500
+
+    slayddagi xatolar to'g'irlandi, style lar berildi
+
+[33mcommit 20e352a96a34e96cf2c8a9d598e4e8acea5486e8[m
+Author: Islombek Matkarimov <matkaimovislambek@gmail.com>
+Date:   Thu Nov 20 04:53:14 2025 +0500
+
+     img-representations qo'shildi
+
+[33mcommit 99a7ac892c019185c3281f165091887dcc2ed5d7[m
+Author: Islombek Matkarimov <matkaimovislambek@gmail.com>
+Date:   Wed Nov 19 17:40:03 2025 +0500
+
+     slayder, kichkina html va css o'zgarishlar, mobile media query
+
+[33mcommit 8238ec21f901339784c97ac43e1258c171071500[m
+Author: Islombek Matkarimov <matkaimovislambek@gmail.com>
+Date:   Wed Nov 19 17:01:03 2025 +0500
+
+    nav-bar fuly changed, hero section
+
+[33mcommit e91acde32f838ad6c0bbd82ff10a5000d3e58d1c[m
+Author: Islombek Matkarimov <matkaimovislambek@gmail.com>
+Date:   Mon Nov 17 16:57:31 2025 +0500
+
+    test 3
+
+[33mcommit d919f4e9414255f1c3d6f35c43238087eeb1512a[m
+Author: Islombek Matkarimov <matkaimovislambek@gmail.com>
+Date:   Mon Nov 17 16:41:29 2025 +0500
+
+    test 2
+
+[33mcommit 64ba8cf5b74212ea6d3ec297a036a625d0bf56ac[m
+Author: Islombek Matkarimov <matkaimovislambek@gmail.com>
+Date:   Mon Nov 17 15:50:50 2025 +0500
+
+    test
+
+[33mcommit b5c0ea5f6d5b635437d865a178608c7b78e1e8b6[m
+Author: Islombek Matkarimov <matkaimovislambek@gmail.com>
+Date:   Sun Nov 16 13:24:05 2025 +0500
+
+    loader qo'shildi
+
+[33mcommit 295428d71d882fe7784f17a5eb5567bbbbca1358[m
+Author: Islombek Matkarimov <matkaimovislambek@gmail.com>
+Date:   Sun Nov 16 12:24:55 2025 +0500
+
+    img
+
+[33mcommit 926b5ff3b1d5a874e5c1fbb4a5dd8069ceaf4706[m
+Author: Islombek Matkarimov <matkaimovislambek@gmail.com>
+Date:   Sun Nov 16 12:20:27 2025 +0500
+
+    header ga qo'shimcha buttonlar qo'shildi, style berildi
+
+[33mcommit 45297c89069297e26c9d277853efa06bede66d8f[m
+Author: Islombek Matkarimov <matkaimovislambek@gmail.com>
+Date:   Sat Nov 15 04:44:39 2025 +0500
+
+    index.html - header skelet
