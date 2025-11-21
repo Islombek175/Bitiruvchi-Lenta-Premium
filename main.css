@@ -116,6 +116,7 @@
 body {
 	background: radial-gradient(circle at top, #fff8f1, #f6f0ff);
 	min-height: 100vh;
+	scroll-behavior: smooth;
 }
 
 section {
@@ -211,6 +212,12 @@ section::before {
 .site-nav a:hover {
 	color: #ff7b54;
 	transform: translateY(-2px);
+}
+
+.site-nav a.active {
+	color: #ff7b54;
+	transform: translateY(-2px);
+	font-weight: 600;
 }
 
 .site-nav .cta {

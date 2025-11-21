@@ -29,6 +29,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
 	// Asosiy slayderni ishga tushirish
 	initHeroSlider()
+	// Nav havolalarini aktivlashtirish va silliq skroll
+	initSectionObserver(navLinks)
+	initSmoothScroll(navLinks)
 })
 
 function initHeroSlider() {
@@ -226,4 +229,64 @@ function initHeroSlider() {
 
 	// Klonlangan birinchi rasm bilan boshlash (indeks 1)
 	goToSlide(1, false)
+}
+
+function initSectionObserver(navLinks) {
+	if (!navLinks || !navLinks.length) return
+
+	const links = Array.from(navLinks).filter(link => link.hash)
+	const sections = links
+		.map(link => document.querySelector(link.hash))
+		.filter(Boolean)
+
+	if (!sections.length) return
+
+	const setActiveLink = id => {
+		links.forEach(link => {
+			const isActive = link.hash === `#${id}`
+			link.classList.toggle('active', isActive)
+		})
+	}
+
+	const observer = new IntersectionObserver(
+		entries => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					setActiveLink(entry.target.id)
+				}
+			})
+		},
+		{
+			threshold: 0.45,
+			rootMargin: '0px 0px -20% 0px',
+		}
+	)
+
+	sections.forEach(section => observer.observe(section))
+	setActiveLink(sections[0].id)
+}
+
+function initSmoothScroll(navLinks) {
+	if (!navLinks || !navLinks.length) return
+
+	const headerOffset = 90
+
+	navLinks.forEach(link => {
+		if (!link.hash) return
+
+		link.addEventListener('click', event => {
+			const target = document.querySelector(link.hash)
+			if (!target) return
+
+			event.preventDefault()
+			const targetPosition =
+				target.getBoundingClientRect().top + window.pageYOffset
+			const scrollTo = targetPosition - headerOffset
+
+			window.scrollTo({
+				top: scrollTo,
+				behavior: 'smooth',
+			})
+		})
+	})
 }
