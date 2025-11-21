@@ -286,13 +286,42 @@ h1 {
 .hero-slider {
 	position: relative;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
-	justify-content: center;
-	gap: 12px;
-	padding: 32px 12px;
+	gap: 20px;
+	padding: 32px 24px;
 	border-radius: 32px;
 	background: rgba(255, 255, 255, 0.75);
 	box-shadow: 0 30px 60px rgba(85, 60, 154, 0.15);
+}
+
+.slider-heading {
+	text-align: center;
+}
+
+.slider-heading p {
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	color: #ff7b54;
+	margin-bottom: 6px;
+	font-weight: 600;
+}
+
+.slider-heading h3 {
+	font-size: 22px;
+	color: #2d1f54;
+	margin: 0;
+	font-weight: 600;
+}
+
+.slider-frame {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+	position: relative;
 }
 
 .slider-window {
@@ -472,17 +501,15 @@ h1 {
 	}
 
 	.hero-slider {
-		flex-direction: column;
 		padding: 24px;
-		position: relative;
 	}
 
-	.slider-window {
+	.slider-frame {
 		position: relative;
 		width: 100%;
 	}
 
-	.slider-btn {
+	.slider-frame .slider-btn {
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
@@ -491,16 +518,19 @@ h1 {
 		height: 40px;
 	}
 
-	.slider-btn.prev {
+	.slider-frame .slider-btn.prev {
 		left: 8px;
 	}
 
-	.slider-btn.next {
+	.slider-frame .slider-btn.next {
 		right: 8px;
+	}
+
+	.slider-window {
+		width: 100%;
 	}
 
 	.slider-dots {
 		bottom: 12px;
-		z-index: 10;
 	}
 }
