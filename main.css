@@ -321,6 +321,8 @@ h1 {
 	border-radius: 32px;
 	background: rgba(255, 255, 255, 0.75);
 	box-shadow: 0 30px 60px rgba(85, 60, 154, 0.15);
+	width: min(520px, 100%);
+	margin: 0 auto;
 }
 
 .slider-heading {
@@ -353,7 +355,8 @@ h1 {
 }
 
 .slider-window {
-	width: min(420px, 80vw);
+	width: 100%;
+	max-width: 420px;
 	aspect-ratio: 4 / 3;
 	border-radius: 24px;
 	overflow: hidden;
@@ -663,7 +666,7 @@ h1 {
 	}
 
 	.hero-slider {
-		padding: 24px 16px;
+		padding: 26px 18px;
 		gap: 16px;
 	}
 
@@ -673,34 +676,6 @@ h1 {
 	}
 
 	.slider-heading h3 {
-		font-size: 18px;
-	}
-
-	.slider-frame {
-		gap: 6px;
-	}
-
-	.slider-window {
-		width: 100%;
-		aspect-ratio: 3 / 4;
-		padding: 8px;
-	}
-
-	.slider-item {
-		padding: 4px;
-	}
-
-	.slider-item img {
-		border-radius: 14px;
-	}
-
-	.slider-frame .slider-btn {
-		width: 36px;
-		height: 36px;
-		font-size: 18px;
-	}
-
-	.slider-dots {
-		bottom: 10px;
+		font-size: 20px;
 	}
 }
