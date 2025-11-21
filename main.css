@@ -280,9 +280,9 @@ section::before {
 }
 
 .hero-copy {
-	max-width: 620px;
+	max-width: 376px;
 }
-
+hero-slider
 .eyebrow {
 	font-size: 14px;
 	text-transform: uppercase;
@@ -321,7 +321,7 @@ h1 {
 	border-radius: 32px;
 	background: rgba(255, 255, 255, 0.75);
 	box-shadow: 0 30px 60px rgba(85, 60, 154, 0.15);
-	width: min(520px, 100%);
+	width: min(376px, 100%);
 	margin: 0 auto;
 }
 
