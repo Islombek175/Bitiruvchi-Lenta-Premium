@@ -44,43 +44,43 @@ function initHeroSlider() {
 
 	const galleryImages = [
 		{
-			src: 'img/represent1.JPG',
+			src: 'img/represents/represent1.jpg',
 			caprion: 'Presentatsiya 1',
 		},
 		{
-			src: 'img/represent2.JPG',
+			src: 'img/represents/represent2.JPG',
 			caprion: 'Presentatsiya 2',
 		},
 		{
-			src: 'img/represent3.JPG',
+			src: 'img/represents/represent3.JPG',
 			caprion: 'Presentatsiya 3',
 		},
 		{
-			src: 'img/represent4.JPG',
+			src: 'img/represents/represent4.JPG',
 			caprion: 'Presentatsiya 4',
 		},
 		{
-			src: 'img/represent5.JPG',
+			src: 'img/represents/represent5.JPG',
 			caprion: 'Presentatsiya 5',
 		},
 		{
-			src: 'img/represent6.JPG',
+			src: 'img/represents/represent6.JPG',
 			caprion: 'Presentatsiya 6',
 		},
 		{
-			src: 'img/represent7.JPG',
+			src: 'img/represents/represent7.JPG',
 			caprion: 'Presentatsiya 7',
 		},
 		{
-			src: 'img/represent8.JPG',
+			src: 'img/represents/represent8.JPG',
 			caprion: 'Presentatsiya 8',
 		},
 		{
-			src: 'img/represent9.JPG',
+			src: 'img/represents/represent9.JPG',
 			caprion: 'Presentatsiya 9',
 		},
 		{
-			src: 'img/represent10.JPG',
+			src: 'img/represents/represent10.JPG',
 			caprion: 'Presentatsiya 10',
 		},
 	]
