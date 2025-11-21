@@ -621,3 +621,86 @@ h1 {
 		width: min(540px, 94vw);
 	}
 }
+
+@media (max-width: 600px) {
+	.container {
+		padding: 0 18px;
+	}
+
+	.hero {
+		padding: 96px 0 64px;
+	}
+
+	.hero-copy {
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.eyebrow {
+		font-size: 12px;
+		letter-spacing: 4px;
+		margin-bottom: 12px;
+	}
+
+	h1 {
+		font-size: clamp(28px, 9vw, 40px);
+		line-height: 1.2;
+	}
+
+	.lead {
+		font-size: 16px;
+		margin-bottom: 24px;
+	}
+
+	.hero-actions {
+		justify-content: center;
+	}
+
+	.hero-actions .btn {
+		width: 100%;
+		max-width: 240px;
+		justify-content: center;
+	}
+
+	.hero-slider {
+		padding: 24px 16px;
+		gap: 16px;
+	}
+
+	.slider-heading p {
+		font-size: 11px;
+		letter-spacing: 3px;
+	}
+
+	.slider-heading h3 {
+		font-size: 18px;
+	}
+
+	.slider-frame {
+		gap: 6px;
+	}
+
+	.slider-window {
+		width: 100%;
+		aspect-ratio: 3 / 4;
+		padding: 8px;
+	}
+
+	.slider-item {
+		padding: 4px;
+	}
+
+	.slider-item img {
+		border-radius: 14px;
+	}
+
+	.slider-frame .slider-btn {
+		width: 36px;
+		height: 36px;
+		font-size: 18px;
+	}
+
+	.slider-dots {
+		bottom: 10px;
+	}
+}
