@@ -580,3 +580,7 @@ h1 {
 		width: min(540px, 94vw);
 	}
 }
+
+footer {
+	background-color: #000;
+}
