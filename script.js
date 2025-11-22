@@ -51,39 +51,39 @@ function initHeroSlider() {
 			caprion: 'Presentatsiya 1',
 		},
 		{
-			src: 'img/represent2.JPG',
+			src: 'img/represent2.jpg',
 			caprion: 'Presentatsiya 2',
 		},
 		{
-			src: 'img/represent3.JPG',
+			src: 'img/represent3.jpg',
 			caprion: 'Presentatsiya 3',
 		},
 		{
-			src: 'img/represent4.JPG',
+			src: 'img/represent4.jpg',
 			caprion: 'Presentatsiya 4',
 		},
 		{
-			src: 'img/represent5.JPG',
+			src: 'img/represent5.jpg',
 			caprion: 'Presentatsiya 5',
 		},
 		{
-			src: 'img/represent6.JPG',
+			src: 'img/represent6.jpg',
 			caprion: 'Presentatsiya 6',
 		},
 		{
-			src: 'img/represent7.JPG',
+			src: 'img/represent7.jpg',
 			caprion: 'Presentatsiya 7',
 		},
 		{
-			src: 'img/represent8.JPG',
+			src: 'img/represent8.jpg',
 			caprion: 'Presentatsiya 8',
 		},
 		{
-			src: 'img/represent9.JPG',
+			src: 'img/represent9.jpg',
 			caprion: 'Presentatsiya 9',
 		},
 		{
-			src: 'img/represent10.JPG',
+			src: 'img/represent10.jpg',
 			caprion: 'Presentatsiya 10',
 		},
 	]
