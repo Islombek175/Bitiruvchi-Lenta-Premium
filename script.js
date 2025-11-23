@@ -265,28 +265,3 @@ function initSectionObserver(navLinks) {
 	sections.forEach(section => observer.observe(section))
 	setActiveLink(sections[0].id)
 }
-
-function initSmoothScroll(navLinks) {
-	if (!navLinks || !navLinks.length) return
-
-	const headerOffset = 90
-
-	navLinks.forEach(link => {
-		if (!link.hash) return
-
-		link.addEventListener('click', event => {
-			const target = document.querySelector(link.hash)
-			if (!target) return
-
-			event.preventDefault()
-			const targetPosition =
-				target.getBoundingClientRect().top + window.pageYOffset
-			const scrollTo = targetPosition - headerOffset
-
-			window.scrollTo({
-				top: scrollTo,
-				behavior: 'smooth',
-			})
-		})
-	})
-}
