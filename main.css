@@ -661,7 +661,7 @@ h1 {
 }
 
 .contact {
-	padding: 60px 90px;
+	padding: 60px 30px;
 	text-align: center;
 }
 
@@ -720,6 +720,8 @@ h1 {
 
 .contact-form .btn.primary {
 	border: none;
+	display: block;
+	width: fit-content;
 	margin: 0 auto;
 }
 
