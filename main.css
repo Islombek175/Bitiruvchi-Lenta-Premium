@@ -548,7 +548,7 @@ h1 {
 	margin-bottom: 50px;
 }
 
-.card {
+.box {
 	width: 20%;
 	min-width: 376px;
 	margin: 0;
@@ -559,27 +559,107 @@ h1 {
 	text-align: center;
 }
 
-.card:last-child a {
+.box:last-child a {
 	margin-top: 50px;
 }
 
-.card-title {
+.price-title {
 	font-size: clamp(28px, 4vw, 40px);
 	color: #2d1f54;
 	margin-bottom: 16px;
 	font-weight: 600;
 }
 
-.card-info {
+.price-info {
 	font-weight: 600;
 	font-size: 18px;
 	color: #5b4d7b;
 	margin-bottom: 32px;
 }
 
-.card-price span {
-	color: #000;
+.faq .container .lead {
+	color: #ff7b54;
 }
+
+h1 {
+	margin-top: 24px;
+	text-align: left;
+	display: grid;
+	gap: 18px;
+}
+
+.card {
+	background: #fff;
+	border-radius: 12px;
+	padding: 10px 20px;
+	margin-bottom: 20px;
+	box-shadow: 0 12px 24px rgba(15, 107, 58, 0.06);
+	transition: transform 0.22s ease, box-shadow 0.22s ease;
+	overflow: hidden;
+}
+
+.card:hover {
+	transform: translateY(-4px);
+}
+
+.question {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+}
+
+.question h3 {
+	margin: 0;
+	font-size: 16px;
+	color: #8264ff;
+	font-weight: 600;
+}
+
+.toggle-btn {
+	background: transparent;
+	border: 0;
+	padding: 8px;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 999px;
+	transition: transform 0.18s ease;
+}
+
+.toggle-icon {
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+	transition: transform 0.25s ease;
+	color: #9b4f24;
+	transform-origin: center;
+}
+
+.answer {
+	max-height: 0;
+	opacity: 0;
+	transform: translateY(-6px);
+	transition: all 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+	color: #2b3b36;
+	font-size: 15px;
+	margin-top: 14px;
+	line-height: 1.6;
+}
+
+.card.open .answer {
+	opacity: 1;
+	max-height: 600px;
+	transform: none;
+}
+
+.card.open .toggle-icon {
+	transform: rotate(180deg);
+}
+
 .contact {
 	padding: 60px 90px;
 	text-align: center;
@@ -599,7 +679,7 @@ h1 {
 }
 
 .contact-form {
-	max-width: 420px;
+	max-width: 720px;
 	margin: 0 auto;
 	text-align: left;
 	background: #fff;
@@ -640,7 +720,7 @@ h1 {
 
 .contact-form .btn.primary {
 	border: none;
-	margin: 0 35%;
+	margin: 0 auto;
 }
 
 @media (max-width: 900px) {

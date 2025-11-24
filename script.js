@@ -265,3 +265,40 @@ function initSectionObserver(navLinks) {
 	sections.forEach(section => observer.observe(section))
 	setActiveLink(sections[0].id)
 }
+
+// Minimal kirish mumkin akkordeon harakati
+document.querySelectorAll('.card').forEach(function (card) {
+	var btn = card.querySelector('.toggle-btn')
+	var answer = card.querySelector('.answer')
+	// clicking on entire question also toggles
+	card.querySelector('.question').addEventListener('click', function () {
+		btn.click()
+	})
+
+	btn.addEventListener('click', function () {
+		var isOpen = card.classList.contains('open')
+		// Hammasini yopish
+		document.querySelectorAll('.card.open').forEach(function (c) {
+			if (c !== card) {
+				c.classList.remove('open')
+				c.querySelector('.toggle-btn').setAttribute('aria-expanded', 'false')
+			}
+		})
+		if (isOpen) {
+			card.classList.remove('open')
+			btn.setAttribute('aria-expanded', 'false')
+		} else {
+			card.classList.add('open')
+			btn.setAttribute('aria-expanded', 'true')
+		}
+	})
+})
+// Klaviaturani boshqarishga ruxsat bering
+document.querySelectorAll('.toggle-btn').forEach(function (b) {
+	b.addEventListener('keydown', function (e) {
+		if (e.key === 'Enter' || e.key === ' ') {
+			e.preventDefault()
+			b.click()
+		}
+	})
+})
